@@ -1,0 +1,53 @@
+/* Contenedor de la lista */
+.task-list-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para cada tarea */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Estado de tarea completada */
+  .task-item.completed p {
+    text-decoration: line-through;
+    color: #999999;
+  }
+  
+  /* Botones de acción */
+  .task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item button.delete {
+    background-color: #dc3545;
+  }
+  
+  .task-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-item button.delete:hover {
+    background-color: #c82333;
+  }
+  

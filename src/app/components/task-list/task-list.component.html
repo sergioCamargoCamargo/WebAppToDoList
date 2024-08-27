@@ -1,0 +1,12 @@
+
+
+  <div class="task-list-container">
+    <div *ngFor="let task of filteredTasks" class="task-item" [ngClass]="{ 'completed': task.completed }">
+      <p>{{ task.title }}</p>
+      <div>
+        <button (click)="completeTask(task)">Complete</button>
+        <button class="delete" (click)="deleteTask(task.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+  

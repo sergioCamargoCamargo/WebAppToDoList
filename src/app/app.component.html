@@ -1,0 +1,7 @@
+<h1>WebAppToDoList</h1>
+
+<app-task-form (taskCreated)="taskList.loadTasks()"></app-task-form>
+<app-task-filter (filterChanged)="taskList.filterTasks($event)"></app-task-filter>
+<app-task-list #taskList></app-task-list>
+
+<router-outlet />
